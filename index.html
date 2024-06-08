@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arimo:ital,wght@0,400..700;1,400..700&family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Deca:wght@100..900&family=M+PLUS+1p&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sora:wght@100..800&display=swap');
+    
+    a{
+        color: rgb(62, 62, 62);
+    }
+
+    .login-hero
+    {
+        background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    body{
+            background:rgb(244, 248, 255);
+            user-select: none;
+        }
+        .login-input
+        {
+            width:300px;
+            height:2.8rem;
+            background-color: rgba(236, 236, 236, 0.241);
+            border-color: rgba(128, 128, 128, 0.435);
+            font-size: 14px;
+            font-weight:500;
+        }
+        .form-label
+        {
+            font-size:small;
+            font-weight: 600;
+            color: rgb(80, 80, 80);
+            line-height: normal;
+        }
+        .btn-warning
+        {
+            font-weight: 600;
+            font-size: medium;
+            padding:0.8rem 2rem 0.8rem 2rem ;
+            background-color: rgb(255, 149, 0);
+            width: fit-content;
+            border-color: rgb(255, 149, 0);
+            font-size: medium;
+        }
+    .hero-heading
+    {
+        max-width:450px;
+        text-align: center;
+        line-height: normal;
+        font-size:45px;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+    .hero-sub-heading
+    {
+        max-width:450px;
+        text-align: center;
+        line-height: normal;
+        font-size:22px;
+        font-weight: semi-bold;
+        margin-top: 1rem;
+        max-width:350px;
+    }
+    .login-hero-content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30%;
+    }
+</style>
+<body>
+    <div class="d-flex flex-column flex-md-row">
+        <div class="login-hero text-white px-4" style="height: 100vh;min-width:42%;">
+            <div class="login-hero-content">
+                <img src="./img/login-page-hero.png" style="border:4px solid rgb(0, 0, 0);border-radius: 50%;" width="180px" height="180px" alt="">
+                <p class="hero-heading" >जनानां कार्यालयम्</p>
+                <p class="hero-sub-heading">॥ उत्तरं यत्समुद्रस्य हिमाद्रेश्चैव दक्षिणम् । वर्षं तद् भारतं नाम भारती यत्र संततिः ॥</p>
+            </div>
+            <a href="#loginSection" type="submit" class="d-flex d-md-none btn btn-light mt-2 align-items-center gap-2 px-4 py-2"><p class="fs-6 fw-semibold m-0">Login</p><i class="fa-solid fa-arrow-down m-0" aria-hidden="true"></i></a>
+            <div class="mb-5 text-center" style="max-width:300px;">
+                || ॐ सहनाववतु
+                सह नौ भुनक्तु
+                सह वीर्यं करवाव है
+                तेजस्वि नावधीतमस्तु मा विद्विषाव है ||
+            </div>
+        </div>
+        <div id="loginSection" class="flex-fill d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+            <form class="d-flex flex-column justify-content-center mt-5 mt-md-0 ">
+                <h3 class="mb-4 fw-semibold" style="max-width:240px;color: rgb(89, 89, 89);">Login</h3>
+                <p class="fw-semibold mb-2" style="color: rgb(89, 89, 89);font-size:small;text-decoration: underline;">Please fill your login details here</p>
+                <div class="mt-2 mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Username</label>
+                  <input type="email" class="form-control login-input" placeholder="Enter Username">
+                </div>
+                <div class="mb-4">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control login-input" placeholder="Enter Password">
+                </div>
+                <div class="mb-4 d-flex justify-content-between">
+                    <a class="" style="font-size: small;" href="">Create Account</a>
+                    <a class="" style="font-size: small;" href="">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn btn-warning text-white mt-2">Log In</button>
+              </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
