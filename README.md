@@ -18,5 +18,5 @@ This codebase is for development/testing purposes only.
 
 ## License
 
-[Specify License (e.g., MIT)]
+MIT License
 
