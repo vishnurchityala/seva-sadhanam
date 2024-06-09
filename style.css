@@ -1,0 +1,29 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+.nav-links
+{
+    align-items: center;
+    gap:1rem;
+}
+.nav-link-item{
+    user-select: none;
+    border-bottom: 0.2rem solid inherit;
+    padding:0.8rem 1rem 0.8rem 1rem ;
+    font-size: small;
+    font-weight: 500;
+}
+.nav-link-item>ul>li{
+    font-size: small;
+}
+.nav-link-item.active{
+    border-bottom: 0.2rem solid orange;
+}
+
+.nav-link-item.active > a{
+    color: rgb(255, 166, 0);
+}

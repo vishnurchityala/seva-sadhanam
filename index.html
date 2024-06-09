@@ -139,10 +139,6 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <!-- <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">OTP Verification</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div> -->
             <div class="modal-body">
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <img src="./img/secure-data.png" width="60px" alt="">
@@ -150,12 +146,13 @@
                     <p class="m-0 fw-semibold fs-x-small text-grey ">We've sent a code to your number</p>
                 </div>
                 <div class="mt-4">
-                    <label for="exampleInputPassword1" class="form-label">One Time Password</label>
+                    <label for="" class="form-label">One Time Password</label>
                     <input type="password" class="form-control login-input" placeholder="Enter OTP here">
                 </div>
                 <p class="fs-x-small mt-2 m-0 mb-4">Time remaining: 00:00</p>
                 <div class="d-flex">
-                    <button type="button" class="btn btn-success btn-otp mt-2  ms-auto me-2">Verify</button>
+                    <a href="./pages/manageVisitor.html" class="ms-auto me-2" ><button type="button" class="btn btn-success btn-otp mt-2  ">Verify</button></a>
+                    <!-- <button type="button" class="btn btn-success btn-otp mt-2  ms-auto me-2">Verify</button> -->
                     <button type="button"  data-bs-dismiss="modal"  class="btn btn-otp btn-danger mt-2 me-auto">Cancel</button>
                 </div>
             </div>
