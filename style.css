@@ -5,6 +5,13 @@ a{
 a:hover{
     color: black;
 }
+.dropdown-item{
+    border-left: 0.2rem solid none;
+    transition: 0.15s ease-in-out;
+}
+.dropdown-item:hover{
+    border-left: 0.2rem solid orange;
+}
 .nav-links
 {
     align-items: center;
