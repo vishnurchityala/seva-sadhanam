@@ -9,87 +9,133 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light p-0 px-5">
-        <div class="d-none d-md-flex nav-links">
-            <div class="nav-link-item active dropdown">
-                <a class="m-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Constituency
-                    <i class="fa fa-chevron-down ms-2" style="font-size:x-small;" aria-hidden="true"></i>
-                </a>
-                
-                <ul class="dropdown-menu mt-1 bg-light">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <nav class="bg-light">
+        <!-- Navbar container -->
+        <div class="container-fluid px-4 d-flex gap-3 align-items-center">
+
+            <!-- Leader image -->
+             <img src="../img/leader-image.jpeg" class="mt-2 mb-2 leader-image" width="40px" height="40px" alt="">
+
+            <!-- Navbar dropdowns -->
+            <div class="d-none d-md-flex gap-3">
+                <div class="dropdown">
+                    <div class="nav-dropdown"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Constituency 
+                        <i class="fa fa-chevron-down fs-x-small ms-2" aria-hidden="true"></i>
+                    </div>
+                    <ul class="dropdown-menu mt-1">
+                        <li><a class="dropdown-item nav-dropdown-item" href="">Assembly Master</a></li>
+                        <li><a class="dropdown-item nav-dropdown-item" href="">Ward Master</a></li>
+                        <li><a class="dropdown-item nav-dropdown-item" href="">Ward Pramukh</a></li>
+                        <li><a class="dropdown-item nav-dropdown-item" href="">Shaktikendra Master</a></li>
+                        <li><a class="dropdown-item nav-dropdown-item" href="">Shaktikendra Pramukh Master</a></li>
+                        <li><a class="dropdown-item nav-dropdown-item" href="">Booth Master</a></li>
+                        <li><a class="dropdown-item nav-dropdown-item" href="">Poling Agent and Reliever</a></li>
+                        <li><a class="dropdown-item nav-dropdown-item" href="">BLA and BLO Pramukh</a></li>
+                      </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="nav-dropdown-active" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Office
+                      <i class="fa fa-chevron-down fs-x-small ms-2" aria-hidden="true"></i>
+                    </div>
+                    <ul class="dropdown-menu mt-1">
+                      <li><a class="dropdown-item nav-dropdown-item-active" href="">Manage Visitors</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Contact Book</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Event Calendar</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Complaint Viewer</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Manage Grant</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Reason</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Users</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Menu Rights</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="nav-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Letters
+                    </div>
+                    <ul class="dropdown-menu mt-1">
+                      <li><a class="dropdown-item nav-dropdown-item-active" href="">Action</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Another action</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="nav-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Beneficiary
+                      <i class="fa fa-chevron-down fs-x-small ms-2" aria-hidden="true"></i>
+                    </div>
+                    <ul class="dropdown-menu mt-1">
+                      <li><a class="dropdown-item nav-dropdown-item-active" href="">Action</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Another action</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="nav-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Analysis
+                      <i class="fa fa-chevron-down fs-x-small ms-2" aria-hidden="true"></i>
+                    </div>
+                    <ul class="dropdown-menu mt-1">
+                      <li><a class="dropdown-item nav-dropdown-item-active" href="">Action</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Another action</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="nav-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Utility
+                      <i class="fa fa-chevron-down fs-x-small ms-2" aria-hidden="true"></i>
+                    </div>
+                    <ul class="dropdown-menu mt-1">
+                      <li><a class="dropdown-item nav-dropdown-item-active" href="">Action</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Another action</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="nav-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Printing
+                      <i class="fa fa-chevron-down fs-x-small ms-2" aria-hidden="true"></i>
+                    </div>
+                    <ul class="dropdown-menu mt-1">
+                      <li><a class="dropdown-item nav-dropdown-item-active" href="">Action</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Another action</a></li>
+                      <li><a class="dropdown-item nav-dropdown-item" href="">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Account Actions -->
+            <div class="dropdown ms-auto cursor-hover px-1">
+                <div type="button px-2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-circle-user me-2"></i> 
+                        <p class="d-none d-md-block  m-0 fs-medium fw-semibold">Admin</p>
+                    </div>
+                </div>
+                <ul class="dropdown-menu mt-1">
+                    <li><a type="button" data-bs-toggle="modal" data-bs-target="#loginConfirmationModal" class="dropdown-item d-flex align-items-center fs-small">Logout <i class="fa-solid fa-arrow-right-from-bracket text-danger ms-auto fw-bold"></i></a></li>
                 </ul>
-            </div>
-            <div class="nav-link-item dropdown">
-                <a class="m-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Office
-                    <i class="fa fa-chevron-down mt-1" style="font-size:x-small;" aria-hidden="true"></i>
-                </a>
-                
-                <ul class="dropdown-menu mt-1 bg-light">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                </ul>
-            </div>
-            <div class="nav-link-item dropdown">
-                <a class="m-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Letters
-                    <i class="fa fa-chevron-down mt-1"  style="font-size: x-small;" aria-hidden="true"></i>
-                </a>
-                
-                <ul class="dropdown-menu mt-1 bg-light">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                  </ul>
-            </div>
-            <div class="nav-link-item dropdown">
-                <a class="m-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Beneficiary 
-                    <i class="fa fa-chevron-down mt-1" style="font-size:x-small;" aria-hidden="true"></i>
-                </a>
-                
-                <ul class="dropdown-menu mt-1 bg-light">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                  </ul>
-            </div>
-            <div class="nav-link-item dropdown">
-                <a class="m-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Analysis 
-                    <i class="fa fa-chevron-down mt-1" style="font-size:x-small;" aria-hidden="true"></i>
-                </a>
-                
-                <ul class="dropdown-menu mt-1 bg-light">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                  </ul>
-            </div>
-            <div class="nav-link-item dropdown">
-                <a class="m-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Utility 
-                    <i class="fa fa-chevron-down mt-1" style="font-size:x-small;" aria-hidden="true"></i>
-                </a>
-                
-                <ul class="dropdown-menu mt-1 bg-light">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                  </ul>
-            </div>
-            <div class="nav-link-item dropdown">
-                <a class="m-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Printing 
-                    <i class="fa fa-chevron-down mt-1" style="font-size:x-small;" aria-hidden="true"></i>
-                </a>
-                
-                <ul class="dropdown-menu mt-1 bg-light">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                  </ul>
             </div>
         </div>
     </nav>
+    <div class="modal fade" id="loginConfirmationModal" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content logout-confirmation-modal rounded-4">
+            <div class="d-flex flex-column gap-3">
+                <h6 class="text-center fw-bold">Are you sure you want to logout ?</h6>
+                <div class="d-flex">
+                    <button type="button"  data-bs-dismiss="modal"  class="btn btn-otp btn-success rounded-pill fw-bold mt-2 ms-auto me-2">Cancel</button>
+                    <a type="button" href="../index.html" class="btn btn-otp btn-danger rounded-pill fw-bold mt-2 me-auto">Logout <i class="fa-solid fa-arrow-right-from-bracket ms-1"></i></a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="d-none d-md-block container-fluid bg-light text-center copyright-bar">
+        Powered By © 2024 - Seva Sadhanam
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
