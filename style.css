@@ -10,6 +10,9 @@
 .fs-normal{
     font-size: normal;
 }
+.fs-large{
+    font-size: larger;
+}
 .cursor-hover{
     cursor: pointer;
 }
