@@ -10,17 +10,18 @@
     <link rel="shortcut icon" href="../img/fav-icon.png" type="image/x-icon">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="bg-light">
         <!-- Navbar container -->
-        <div class="container-fluid px-4 d-flex gap-3 align-items-center py-3 py-md-0">
+        <div class="container-fluid px-4 d-flex gap-3 align-items-center">
 
             <!-- Leader image  -->
             <!-- <i class="fa-brands fa-stumbleupon fs-5 px-3"></i> -->
             <img src="../img/leader-image.png" class="ms-3" width="30px" height="30px" alt="">
-
+            <h6 class="d-block d-lg-none ms-auto me-auto py-2">Seva Sadhanam</h6>
             <!-- Navbar dropdowns -->
             <div class="d-none d-lg-flex flex-fill gap-3">
-                <div class="dropdown mt-auto">
+                <div class="dropdown">
                     <div class="nav-dropdown"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Constituency 
                         <i class="fa fa-chevron-down fs-x-small ms-2" aria-hidden="true"></i>
@@ -36,7 +37,7 @@
                         <li><a class="dropdown-item nav-dropdown-item" href="">BLA and BLO Pramukh</a></li>
                       </ul>
                 </div>
-                <div class="dropdown mt-auto">
+                <div class="dropdown">
                     <div class="nav-dropdown-active" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Office
                       <i class="fa fa-chevron-down fs-x-small ms-2" aria-hidden="true"></i>
@@ -52,14 +53,14 @@
                       <li><a class="dropdown-item nav-dropdown-item" href="">Menu Rights</a></li>
                     </ul>
                 </div>
-                <div class="dropdown mt-auto">
+                <div class="dropdown">
                     <a href="">
                         <div class="nav-dropdown">
                         Letters
                         </div>
                     </a>
                 </div>
-                <div class="dropdown mt-auto">
+                <div class="dropdown">
                     <div class="nav-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Beneficiary
                       <i class="fa fa-chevron-down fs-x-small ms-2" aria-hidden="true"></i>
@@ -70,7 +71,7 @@
                         <li><a class="dropdown-item nav-dropdown-item" href="">Something else here</a></li>
                     </ul>
                 </div>
-                <div class="dropdown mt-auto">
+                <div class="dropdown">
                     <div class="nav-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Analysis
                       <i class="fa fa-chevron-down fs-x-small ms-2" aria-hidden="true"></i>
@@ -81,7 +82,7 @@
                         <li><a class="dropdown-item nav-dropdown-item" href="">Something else here</a></li>
                     </ul>
                 </div>
-                <div class="dropdown mt-auto">
+                <div class="dropdown">
                     <div class="nav-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Utility
                       <i class="fa fa-chevron-down fs-x-small ms-2" aria-hidden="true"></i>
@@ -92,7 +93,7 @@
                       <li><a class="dropdown-item nav-dropdown-item" href="">Something else here</a></li>
                     </ul>
                 </div>
-                <div class="dropdown mt-auto">
+                <div class="dropdown">
                     <div class="nav-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Printing
                       <i class="fa fa-chevron-down fs-x-small ms-2" aria-hidden="true"></i>
@@ -106,7 +107,7 @@
             </div>
 
             <!-- Account Actions -->
-            <div class="dropdown ms-auto cursor-hover px-1">
+            <div class="dropdown cursor-hover px-1">
                 <div type="button px-2" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="d-flex justify-content-center align-items-center">
                         <i class="fa-solid fa-circle-user me-2" style="font-size: 26px;"></i> 
@@ -119,6 +120,7 @@
             </div>
         </div>
     </nav>
+    <!-- Logout confirmation modal -->
     <div class="modal fade" id="loginConfirmationModal" tabindex="-1" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content logout-confirmation-modal rounded-4 bg-light">
@@ -133,9 +135,184 @@
           </div>
         </div>
     </div>
+    <!-- Page header -->
+    <div class="container-fluid  d-flex py-1 page-heading-container">
+        <p class="ms-auto me-auto m-0 fs-small fw-bold text-orange">Manage Visitors </p>
+    </div>
+    <div class="container-fluid d-flex gap-2">
+        <div class="table-container">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th><button class="btn p-0 m-0 fs-small" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Add Visitor" ><i class="fa-solid fa-user-plus"></i></button></th>
+                        <th><i class="fa-solid fa-user-large me-2"></i>Visitor Name</th>
+                        <th><i class="fa-solid fa-phone me-2"></i>Contact</th>
+                        <th><i class="fa-solid fa-phone me-2"></i>Contact</th>
+                        <th><i class="fa-solid fa-id-card-clip me-2"></i>Designation</th>
+                        <th><i class="fa-regular fa-circle-question me-2"></i>Reason</th>
+                        <th><i class="fa-solid fa-briefcase me-2"></i>Work details</th>
+                        <th><i class="fa-solid fa-bars-progress me-2"></i>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-srno">1</td>
+                        <td class="col-visitor">KIRAN ADIGOPPULA </td>
+                        <td class="col-contact">+91-9999999999</td>
+                        <td class="col-contact">+91-9999999999</td>
+                        <td class="col-designation">PP</td>
+                        <td class="col-reason">
+                            <div class="d-flex"> 
+                                <p class="m-0">Aadhar Card</p>
+                                <button class="btn m-0 p-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Print"><p class="m-0"><i class="fa-solid fa-print"></i></p></button>
+                            </div>
+                        </td>
+                        <td class="col-details">AADHAR CARD </td>
+                        <td class="col-status">
+                            <div class="btn-group dropend">
+                                <button type="button" class="btn badge text-bg-success rounded-pill" data-bs-toggle="dropdown" aria-expanded="false">Completed</button>
+                                <ul class="dropdown-menu dropdown-menu-actions w-fit">
+                                    <p class="fs-x-small m-0 me-5 fw-semibold">Actions</p>
+                                    <hr class="m-0 mt-1 mb-1">
+                                    <button type="button" class="btn btn-light fs-x-small fw-bold rounded-pill mt-1"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-srno">1</td>
+                        <td class="col-visitor">KIRAN ADIGOPPULA </td>
+                        <td class="col-contact">+91-9999999999</td>
+                        <td class="col-contact">+91-9999999999</td>
+                        <td class="col-designation">PP</td>
+                        <td class="col-reason">
+                            <div class="d-flex"> 
+                                <p class="m-0">Aadhar Card</p>
+                                <button class="btn m-0 p-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Print"><p class="m-0"><i class="fa-solid fa-print"></i></p></button>
+                            </div>
+                        </td>
+                        <td class="col-details">AADHAR CARD </td>
+                        <td class="col-status">
+                            <div class="btn-group dropend">
+                                <button type="button" class="btn badge text-bg-danger rounded-pill text-white" data-bs-toggle="dropdown" aria-expanded="false">Pending</button>
+                                <ul class="dropdown-menu dropdown-menu-actions w-fit">
+                                    <p class="fs-x-small m-0 me-5 fw-semibold">Actions</p>
+                                    <hr class="m-0 mt-1 mb-1">
+                                    <button type="button" class="btn btn-light fs-x-small fw-bold rounded-pill mt-1"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-srno">1</td>
+                        <td class="col-visitor">KIRAN ADIGOPPULA </td>
+                        <td class="col-contact">+91-9999999999</td>
+                        <td class="col-contact">+91-9999999999</td>
+                        <td class="col-designation">PP</td>
+                        <td class="col-reason">
+                            <div class="d-flex"> 
+                                <p class="m-0">Aadhar Card</p>
+                                <button class="btn m-0 p-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Print"><p class="m-0"><i class="fa-solid fa-print"></i></p></button>
+                            </div>
+                        </td>
+                        <td class="col-details">AADHAR CARD </td>
+                        <td class="col-status">
+                            <div class="btn-group dropend">
+                                <button type="button" class="btn badge text-bg-primary rounded-pill" data-bs-toggle="dropdown" aria-expanded="false">Approved</button>
+                                <ul class="dropdown-menu dropdown-menu-actions w-fit">
+                                    <p class="fs-x-small m-0 me-5 fw-semibold">Actions</p>
+                                    <hr class="m-0 mt-1 mb-1">
+                                    <button type="button" class="btn btn-light fs-x-small fw-bold rounded-pill mt-1"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-srno">1</td>
+                        <td class="col-visitor">KIRAN ADIGOPPULA </td>
+                        <td class="col-contact">+91-9999999999</td>
+                        <td class="col-contact">+91-9999999999</td>
+                        <td class="col-designation">PP</td>
+                        <td class="col-reason">
+                            <div class="d-flex"> 
+                                <p class="m-0">Aadhar Card</p>
+                                <button class="btn m-0 p-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Print"><p class="m-0"><i class="fa-solid fa-print"></i></p></button>
+                            </div>
+                        </td>
+                        <td class="col-details">AADHAR CARD </td>
+                        <td class="col-status">
+                            <div class="btn-group dropend">
+                                <button type="button" class="btn badge text-bg-info rounded-pill text-white" data-bs-toggle="dropdown" aria-expanded="false">In Process</button>
+                                <ul class="dropdown-menu dropdown-menu-actions w-fit">
+                                    <p class="fs-x-small m-0 me-5 fw-semibold">Actions</p>
+                                    <hr class="m-0 mt-1 mb-1">
+                                    <button type="button" class="btn btn-light fs-x-small fw-bold rounded-pill mt-1"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-srno">1</td>
+                        <td class="col-visitor">KIRAN ADIGOPPULA</td>
+                        <td class="col-contact">+91-9999999999</td>
+                        <td class="col-contact">+91-9999999999</td>
+                        <td class="col-designation">PP</td>
+                        <td class="col-reason">
+                            <div class="d-flex"> 
+                                <p class="m-0">Aadhar Card</p>
+                                <button class="btn m-0 p-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Print"><p class="m-0"><i class="fa-solid fa-print"></i></p></button>
+                            </div>
+                        </td>
+                        <td class="col-details">AADHAR CARD </td>
+                        <td class="col-status">
+                            <div class="btn-group dropend">
+                                <button type="button" class="btn badge text-bg-warning text-white rounded-pill" data-bs-toggle="dropdown" aria-expanded="false">Waiting</button>
+                                <ul class="dropdown-menu dropdown-menu-actions w-fit">
+                                    <p class="fs-x-small m-0 me-5 fw-semibold">Actions</p>
+                                    <hr class="m-0 mt-1 mb-1">
+                                    <button type="button" class="btn btn-light fs-x-small fw-bold rounded-pill mt-1"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-srno">1</td>
+                        <td class="col-visitor">KIRAN ADIGOPPULA</td>
+                        <td class="col-contact">+91-9999999999</td>
+                        <td class="col-contact">+91-9999999999</td>
+                        <td class="col-designation">PP</td>
+                        <td class="col-reason">
+                            <div class="d-flex"> 
+                                <p class="m-0">Aadhar Card</p>
+                                <button class="btn m-0 p-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Print"><p class="m-0"><i class="fa-solid fa-print"></i></p></button>
+                            </div>
+                        </td>
+                        <td class="col-details">AADHAR CARD </td>
+                        <td class="col-status">
+                            <div class="btn-group dropend">
+                                <button type="button" class="btn badge text-bg-warning text-white rounded-pill" data-bs-toggle="dropdown" aria-expanded="false">Waiting</button>
+                                <ul class="dropdown-menu dropdown-menu-actions w-fit">
+                                    <p class="fs-x-small m-0 me-5 fw-semibold">Actions</p>
+                                    <hr class="m-0 mt-1 mb-1">
+                                    <button type="button" class="btn btn-light fs-x-small fw-bold rounded-pill mt-1"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- Copyright bar -->
     <div class="d-none d-md-block container-fluid bg-light text-center copyright-bar">
         Powered By © 2024 - Seva Sadhanam
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 </html>
