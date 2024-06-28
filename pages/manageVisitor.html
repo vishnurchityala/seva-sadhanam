@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -107,7 +108,7 @@
             </div>
 
             <!-- Account Actions -->
-            <div class="dropdown cursor-hover px-1">
+            <div class="d-none d-lg-block dropdown cursor-hover px-1">
                 <div type="button px-2" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="d-flex justify-content-center align-items-center">
                         <i class="fa-solid fa-circle-user me-2" style="font-size: 26px;"></i> 
@@ -118,8 +119,29 @@
                     <li><a type="button" data-bs-toggle="modal" data-bs-target="#loginConfirmationModal" class="dropdown-item d-flex align-items-center fs-small">Logout <i class="fa-solid fa-arrow-right-from-bracket text-danger ms-auto fw-bold"></i></a></li>
                 </ul>
             </div>
+            <button class="d-block d-lg-none btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="staticBackdrop">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <div class="dropdown cursor-hover px-1">
+                <div type="button px-2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-circle-user me-2" style="font-size: 26px;"></i> 
+                        <p class="m-0 fs-small fw-semibold">Admin</p>
+                    </div>
+                </div>
+                <ul class="dropdown-menu mt-1 bg-light">
+                    <li><a type="button" data-bs-toggle="modal" data-bs-target="#loginConfirmationModal" class="dropdown-item d-flex align-items-center fs-small">Logout <i class="fa-solid fa-arrow-right-from-bracket text-danger ms-auto fw-bold"></i></a></li>
+                </ul>
+            </div>
+          <button type="button" class="btn" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark fs-large"></i></button>
+        </div>
+        <div class="offcanvas-body">
+        </div>
+    </div>
     <!-- Logout confirmation modal -->
     <div class="modal fade" id="loginConfirmationModal" tabindex="-1" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -139,172 +161,6 @@
     <div class="container-fluid  d-flex py-1 page-heading-container">
         <p class="ms-auto me-auto m-0 fs-small fw-bold text-orange">Manage Visitors </p>
     </div>
-    <div class="container-fluid d-flex gap-2">
-        <div class="table-container">
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th><button class="btn p-0 m-0 fs-small" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Add Visitor" ><i class="fa-solid fa-user-plus"></i></button></th>
-                        <th><i class="fa-solid fa-user-large me-2"></i>Visitor Name</th>
-                        <th><i class="fa-solid fa-phone me-2"></i>Contact</th>
-                        <th><i class="fa-solid fa-phone me-2"></i>Contact</th>
-                        <th><i class="fa-solid fa-id-card-clip me-2"></i>Designation</th>
-                        <th><i class="fa-regular fa-circle-question me-2"></i>Reason</th>
-                        <th><i class="fa-solid fa-briefcase me-2"></i>Work details</th>
-                        <th><i class="fa-solid fa-bars-progress me-2"></i>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="col-srno">1</td>
-                        <td class="col-visitor">KIRAN ADIGOPPULA </td>
-                        <td class="col-contact">+91-9999999999</td>
-                        <td class="col-contact">+91-9999999999</td>
-                        <td class="col-designation">PP</td>
-                        <td class="col-reason">
-                            <div class="d-flex"> 
-                                <p class="m-0">Aadhar Card</p>
-                                <button class="btn m-0 p-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Print"><p class="m-0"><i class="fa-solid fa-print"></i></p></button>
-                            </div>
-                        </td>
-                        <td class="col-details">AADHAR CARD </td>
-                        <td class="col-status">
-                            <div class="btn-group dropend">
-                                <button type="button" class="btn badge text-bg-success rounded-pill" data-bs-toggle="dropdown" aria-expanded="false">Completed</button>
-                                <ul class="dropdown-menu dropdown-menu-actions w-fit">
-                                    <p class="fs-x-small m-0 me-5 fw-semibold">Actions</p>
-                                    <hr class="m-0 mt-1 mb-1">
-                                    <button type="button" class="btn btn-light fs-x-small fw-bold rounded-pill mt-1"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-srno">1</td>
-                        <td class="col-visitor">KIRAN ADIGOPPULA </td>
-                        <td class="col-contact">+91-9999999999</td>
-                        <td class="col-contact">+91-9999999999</td>
-                        <td class="col-designation">PP</td>
-                        <td class="col-reason">
-                            <div class="d-flex"> 
-                                <p class="m-0">Aadhar Card</p>
-                                <button class="btn m-0 p-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Print"><p class="m-0"><i class="fa-solid fa-print"></i></p></button>
-                            </div>
-                        </td>
-                        <td class="col-details">AADHAR CARD </td>
-                        <td class="col-status">
-                            <div class="btn-group dropend">
-                                <button type="button" class="btn badge text-bg-danger rounded-pill text-white" data-bs-toggle="dropdown" aria-expanded="false">Pending</button>
-                                <ul class="dropdown-menu dropdown-menu-actions w-fit">
-                                    <p class="fs-x-small m-0 me-5 fw-semibold">Actions</p>
-                                    <hr class="m-0 mt-1 mb-1">
-                                    <button type="button" class="btn btn-light fs-x-small fw-bold rounded-pill mt-1"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-srno">1</td>
-                        <td class="col-visitor">KIRAN ADIGOPPULA </td>
-                        <td class="col-contact">+91-9999999999</td>
-                        <td class="col-contact">+91-9999999999</td>
-                        <td class="col-designation">PP</td>
-                        <td class="col-reason">
-                            <div class="d-flex"> 
-                                <p class="m-0">Aadhar Card</p>
-                                <button class="btn m-0 p-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Print"><p class="m-0"><i class="fa-solid fa-print"></i></p></button>
-                            </div>
-                        </td>
-                        <td class="col-details">AADHAR CARD </td>
-                        <td class="col-status">
-                            <div class="btn-group dropend">
-                                <button type="button" class="btn badge text-bg-primary rounded-pill" data-bs-toggle="dropdown" aria-expanded="false">Approved</button>
-                                <ul class="dropdown-menu dropdown-menu-actions w-fit">
-                                    <p class="fs-x-small m-0 me-5 fw-semibold">Actions</p>
-                                    <hr class="m-0 mt-1 mb-1">
-                                    <button type="button" class="btn btn-light fs-x-small fw-bold rounded-pill mt-1"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-srno">1</td>
-                        <td class="col-visitor">KIRAN ADIGOPPULA </td>
-                        <td class="col-contact">+91-9999999999</td>
-                        <td class="col-contact">+91-9999999999</td>
-                        <td class="col-designation">PP</td>
-                        <td class="col-reason">
-                            <div class="d-flex"> 
-                                <p class="m-0">Aadhar Card</p>
-                                <button class="btn m-0 p-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Print"><p class="m-0"><i class="fa-solid fa-print"></i></p></button>
-                            </div>
-                        </td>
-                        <td class="col-details">AADHAR CARD </td>
-                        <td class="col-status">
-                            <div class="btn-group dropend">
-                                <button type="button" class="btn badge text-bg-info rounded-pill text-white" data-bs-toggle="dropdown" aria-expanded="false">In Process</button>
-                                <ul class="dropdown-menu dropdown-menu-actions w-fit">
-                                    <p class="fs-x-small m-0 me-5 fw-semibold">Actions</p>
-                                    <hr class="m-0 mt-1 mb-1">
-                                    <button type="button" class="btn btn-light fs-x-small fw-bold rounded-pill mt-1"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-srno">1</td>
-                        <td class="col-visitor">KIRAN ADIGOPPULA</td>
-                        <td class="col-contact">+91-9999999999</td>
-                        <td class="col-contact">+91-9999999999</td>
-                        <td class="col-designation">PP</td>
-                        <td class="col-reason">
-                            <div class="d-flex"> 
-                                <p class="m-0">Aadhar Card</p>
-                                <button class="btn m-0 p-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Print"><p class="m-0"><i class="fa-solid fa-print"></i></p></button>
-                            </div>
-                        </td>
-                        <td class="col-details">AADHAR CARD </td>
-                        <td class="col-status">
-                            <div class="btn-group dropend">
-                                <button type="button" class="btn badge text-bg-warning text-white rounded-pill" data-bs-toggle="dropdown" aria-expanded="false">Waiting</button>
-                                <ul class="dropdown-menu dropdown-menu-actions w-fit">
-                                    <p class="fs-x-small m-0 me-5 fw-semibold">Actions</p>
-                                    <hr class="m-0 mt-1 mb-1">
-                                    <button type="button" class="btn btn-light fs-x-small fw-bold rounded-pill mt-1"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-srno">1</td>
-                        <td class="col-visitor">KIRAN ADIGOPPULA</td>
-                        <td class="col-contact">+91-9999999999</td>
-                        <td class="col-contact">+91-9999999999</td>
-                        <td class="col-designation">PP</td>
-                        <td class="col-reason">
-                            <div class="d-flex"> 
-                                <p class="m-0">Aadhar Card</p>
-                                <button class="btn m-0 p-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Print"><p class="m-0"><i class="fa-solid fa-print"></i></p></button>
-                            </div>
-                        </td>
-                        <td class="col-details">AADHAR CARD </td>
-                        <td class="col-status">
-                            <div class="btn-group dropend">
-                                <button type="button" class="btn badge text-bg-warning text-white rounded-pill" data-bs-toggle="dropdown" aria-expanded="false">Waiting</button>
-                                <ul class="dropdown-menu dropdown-menu-actions w-fit">
-                                    <p class="fs-x-small m-0 me-5 fw-semibold">Actions</p>
-                                    <hr class="m-0 mt-1 mb-1">
-                                    <button type="button" class="btn btn-light fs-x-small fw-bold rounded-pill mt-1"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-
     <!-- Copyright bar -->
     <div class="d-none d-md-block container-fluid bg-light text-center copyright-bar">
         Powered By © 2024 - Seva Sadhanam
@@ -313,6 +169,18 @@
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        const collapseElementList = document.querySelectorAll('.collapse')
+        const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+        var myOffcanvas = document.getElementById('offcanvas');
+                myOffcanvas.addEventListener('shown.bs.offcanvas', function () {
+                    var collapseElements = document.querySelectorAll('.collapse.show');
+                    collapseElements.forEach(function(collapseEl) {
+                        var collapseInstance = bootstrap.Collapse.getInstance(collapseEl);
+                        if (collapseInstance) {
+                            collapseInstance.hide();
+                        }
+                    });
+                });
     </script>
 </body>
 </html>
