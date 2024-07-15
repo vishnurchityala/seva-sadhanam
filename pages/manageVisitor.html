@@ -161,7 +161,7 @@
                     <div class="btn px-2 d-flex align-items-center" data-bs-toggle="collapse" href="#collapseConstituency" role="button" aria-expanded="false" aria-controls="collapseConstituency">
                         <i class="fa-solid fa-users me-3"></i>
                         <p class="m-0 fw-semibold">Constituency</p>
-                        <i class="fa-solid fa-chevron-down ms-auto me-2"></i>
+                        <i class="fa-solid fa-chevron-down fs-small ms-auto me-2"></i>
                     </div>
                     <div class="collapse" id="collapseConstituency">
                         <div class="card card-body m-0 p-0 pe-4 border-0 d-flex flex-column gap-1">
@@ -218,7 +218,7 @@
                     <div class="btn px-2 d-flex align-items-center" data-bs-toggle="collapse" href="#collapseOffice" role="button" aria-expanded="false" aria-controls="collapseOffice">
                         <i class="fa-solid fa-building-user me-3"></i>
                         <p class="m-0 fw-semibold">Office</p>
-                        <i class="fa-solid fa-chevron-down ms-auto me-2"></i>
+                        <i class="fa-solid fa-chevron-down fs-small ms-auto me-2"></i>
                     </div>
                     <div class="collapse" id="collapseOffice">
                         <div class="card card-body m-0 p-0 pe-4 border-0 d-flex flex-column gap-1">
@@ -250,18 +250,180 @@
                                 <i class="fa-solid fa-comments fs-small me-3"></i>
                                 <p class="m-0 fw-semibold fs-small">Send SMS/Notification</p>
                             </div>  
-                            <div class="btn d-flex align-items-center text-bg-light">
+                            <div class="btn d-flex align-items-center text-bg-light" data-bs-toggle="collapse" href="#collapseReason" role="button" aria-expanded="false" aria-controls="collapseReason"  >
                                 <i class="fa-solid fa-circle-info fs-small me-3"></i>
                                 <p class="m-0 fw-semibold fs-small">Reason</p>
-                            </div>  
-                            <div class="btn d-flex align-items-center text-bg-light">
-                                <i class="fa-solid fa-user-shield fs-small me-3"></i>
+                                <i class="fa-solid fa-chevron-down fs-x-small ms-auto me-2"></i>
+                            </div>
+                            <div class="collapse" id="collapseReason">
+                                <div class="card card-body border-0 m-0 p-0 pe-4 d-flex flex-column gap-1">
+                                    <div class="btn d-flex align-items-center text-bg-light">
+                                        <i class="fa-solid fa-circle-info fs-x-small me-3"></i>
+                                        <p class="m-0 fw-semibold fs-x-small">Reason Group</p>
+                                    </div>
+                                    <div class="btn d-flex align-items-center text-bg-light">
+                                        <i class="fa-solid fa-circle-info fs-x-small me-3"></i>
+                                        <p class="m-0 fw-semibold fs-x-small">Reason</p>
+                                    </div>
+                                </div>
+                              </div>  
+                              <div class="btn d-flex align-items-center text-bg-light" data-bs-toggle="collapse" href="#collapseUser" role="button" aria-expanded="false" aria-controls="collapseUser"  >
+                                <i class="fa-solid fa-user fs-small me-3"></i>
                                 <p class="m-0 fw-semibold fs-small">User</p>
-                            </div>  
+                                <i class="fa-solid fa-chevron-down fs-x-small ms-auto me-2"></i>
+                            </div>
+                            <div class="collapse" id="collapseUser">
+                                <div class="card card-body border-0 m-0 p-0 pe-4 d-flex flex-column gap-1">
+                                    <div class="btn d-flex align-items-center text-bg-light">
+                                        <i class="fa-solid fa-computer fs-x-small me-3"></i>
+                                        <p class="m-0 fw-semibold fs-x-small">Web Portal</p>
+                                    </div>
+                                    <div class="btn d-flex align-items-center text-bg-light">
+                                        <i class="fa-solid fa-mobile fs-x-small me-3"></i>
+                                        <p class="m-0 fw-semibold fs-x-small">Mobile App</p>
+                                    </div>
+                                </div>
+                              </div>  
                             <div class="btn d-flex align-items-center text-bg-light">
                                 <i class="fa-solid fa-square-check fs-small me-3"></i>
                                 <p class="m-0 fw-semibold fs-small">Menu Rights</p>
                             </div>   
+                        </div>
+                    </div>
+                    <div class="btn px-2 d-flex align-items-center">
+                        <i class="fa-solid fa-square-envelope me-3"></i>
+                        <p class="m-0 fw-semibold">Letters</p>
+                    </div>
+                    <div class="btn px-2 d-flex align-items-center" data-bs-toggle="collapse" href="#collapseBeneficiary" role="button" aria-expanded="false" aria-controls="collapseBeneficiary">
+                        <i class="fa-solid fa-users-between-lines me-3"></i>
+                        <p class="m-0 fw-semibold">Beneficiary</p>
+                        <i class="fa-solid fa-chevron-down fs-small ms-auto me-2"></i>
+                    </div>
+                    <div class="collapse" id="collapseBeneficiary">
+                        <div class="card card-body m-0 p-0 pe-4 border-0 d-flex flex-column gap-1">
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-table fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Item Master</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-table-list fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Item Details</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-file-lines fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Page</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-table fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Booth Beneficiary List</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-chart-simple fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Beneficiary Summary Report</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="btn px-2 d-flex align-items-center" data-bs-toggle="collapse" href="#collapseAnalysis" role="button" aria-expanded="false" aria-controls="collapseAnalysis">
+                        <i class="fa-solid fa-chart-line me-3"></i>
+                        <p class="m-0 fw-semibold">Analysis</p>
+                        <i class="fa-solid fa-chevron-down fs-small ms-auto me-2"></i>
+                    </div>
+                    <div class="collapse" id="collapseAnalysis">
+                        <div class="card card-body m-0 p-0 pe-4 border-0 d-flex flex-column gap-1">
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-address-card fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Card Viewer</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-chart-simple fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Assembly Wise Summary Report</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-chart-simple fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Booth Wise Page Pramukh Summary Report</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-chart-simple fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Page Pramukh Summary Report</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-table-list fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Single Voter List</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="btn px-2 d-flex align-items-center" data-bs-toggle="collapse" href="#collapseUtility" role="button" aria-expanded="false" aria-controls="collapseUtility">
+                        <i class="fa-solid fa-gear me-3"></i>
+                        <p class="m-0 fw-semibold">Utility</p>
+                        <i class="fa-solid fa-chevron-down fs-small ms-auto me-2"></i>
+                    </div>
+                    <div class="collapse" id="collapseUtility">
+                        <div class="card card-body m-0 p-0 pe-4 border-0 d-flex flex-column gap-1">
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-photo-film fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Album Master</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-cake-candles fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Birthday List</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-ring fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Anniversary List</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-camera-retro fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Media Coverage</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-comments fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">News Feed</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="btn px-2 d-flex align-items-center" data-bs-toggle="collapse" href="#collapsePrinting" role="button" aria-expanded="false" aria-controls="collapsePrinting">
+                        <i class="fa-solid fa-print me-3"></i>
+                        <p class="m-0 fw-semibold">Printing</p>
+                        <i class="fa-solid fa-chevron-down fs-small ms-auto me-2"></i>
+                    </div>
+                    <div class="collapse" id="collapsePrinting">
+                        <div class="card card-body m-0 p-0 pe-4 border-0 d-flex flex-column gap-1">
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-table-columns fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Make PP / PC List Booth Wise</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-table-columns fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">PP / PC List Booth Wise</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-table-columns fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Booth Wise PP List</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-chart-line fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Past Election Result</p>
+                            </div>  
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-table-columns fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Assembly Wise Surname Count</p>
+                            </div>    
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-table-columns fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Booth Wise Surname Count</p>
+                            </div>    
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-table-columns fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Age Wise Voter Count</p>
+                            </div>    
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-receipt fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Voter Slip</p>
+                            </div>    
+                            <div class="btn d-flex align-items-center text-bg-light">
+                                <i class="fa-solid fa-table-columns fs-small me-3"></i>
+                                <p class="m-0 fw-semibold fs-small">Ward Wise Booth Pramukh</p>
+                            </div>    
                         </div>
                     </div>
                 </div>
